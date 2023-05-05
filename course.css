@@ -1,0 +1,91 @@
+*{
+    background-color: #DBD6CB;
+
+}
+
+
+table, th, td {
+    border: 1px solid rgb(54, 42, 42);
+    border-collapse: collapse;
+    margin: 5px;
+    padding: 10px;
+  }
+
+  #courseName,#labInput{
+    background-color: #2C3439;
+    color:  #F2ECD7;
+    height: 25px;
+    border-radius: 5px;
+    padding-left: 4px;
+    margin-bottom: 15px;
+    
+    
+  }
+
+  
+
+  .btn, .delete-button,.labBtn {
+    background-color: #3b622f;
+    height: 25px;
+    border-radius: 6px;
+    padding-left: 4px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px #E46A39;
+    
+  }
+
+  
+.button-3 {
+    appearance: none;
+    background-color:#E46A39;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .button-3:hover {
+    background-color: #4D646A;
+  }
+  
+  .button-3:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+  
+  .button-3:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .button-3:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+
+
+
+  

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="course.css"> 
+    <script src="crs.js"></script>
+</head>
+<body>
+    
+    <!-- <button>Delete Course</button> not in use -->
+
+    <form onsubmit="myFunction();return false; "  >
+
+        <input type="text" id="courseName" placeholder="Enter CourseName"  required > <br>
+        <!-- <input type="text" id="facultyName" placeholder="Enter Faculty Name" pattern="[A-Z]{3}" > <br> -->
+        <input type="submit" class="btn" value="Add Course & Faculty " required > 
+        <input type="reset" class="btn" value="Clear ">
+        <!-- Later Implementation -->
+        <button type="button" class="delete-button" onclick="deleteRow()">Delete</button> <br>
+    </form>
+
+
+    <form onsubmit="addLab(); return false;" >
+      <input type="text" id="labInput" placeholder="Enter LAB Name" required > <br>
+      <input type="submit" class="labBtn" value="ADD LAB "  required > </input>
+   </form>
+
+    <div class="tables"> 
+
+    <table id="myTable" >
+        <tr> 
+            <td class="Course"  >Course</td>
+            <!-- <td class="Faculty" >Faculty</td> -->
+        </tr>
+    </table>
+     
+    <table id="labTable">
+      <thead>
+        <tr>
+          <td>LAB</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          
+        </tr>
+      </tbody>
+    </table>
+    
+
+
+   </div>
+
+    <table> 
+
+        <tr>
+   
+           <th> Time/Day </th>
+           <th> 8 - 9 </th>
+           <th> 9 - 10 </th>
+           <th> 10 - 10.15 </th>
+           <th> 10.15 - 12.15 </th>
+           <th> 12.15 - 1 </th>
+           <th> 1 - 2 </th>
+           <th> 2 - 3 </th>
+           <th> 3 - 4 </th>
+   
+        </tr>
+   
+        <tr>
+   
+           <td> MONDAY </td>
+           <td class="Output" >   </td>
+           <td class="Output" >  </td>
+           <td class="Interval" rowspan="5" >Interval</td>
+           <td class="L-Output" >  </td>
+           <td class="Interval" rowspan="5" >Interval</td>
+           <td class="Output" >  </td>
+           <td class="Output" >  </td>
+           <td class="Output" > </td>
+       
+        </tr>
+        <tr>
+   
+           <td> TUESDAY </td>
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+           
+           <td class="L-Output" >  </td>
+
+           <td class="Output" ></td>
+           
+           
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+             
+        </tr>
+        <tr>
+   
+           <td> WEDNESDAY </td>
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+           <td class="L-Output" >  </td>
+           <td class="Output" ></td>
+           
+           
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+               
+        </tr>
+        <tr>
+   
+           <td> THURSDAY </td>
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+
+           <td class="L-Output" >  </td>
+           
+           <td class="Output" ></td>
+           
+           
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+                
+        </tr>
+        <tr>
+   
+           <td> FRIDAY</td>
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+           
+           <td class="L-Output" >  </td>
+           <td class="Output" ></td>
+           
+           
+           <td class="Output" ></td>
+           <td class="Output" ></td>
+            
+        </tr>
+   
+   
+       </table>
+   
+       <div > <button class="button-3" role="button">Generate</button> </div>
+
+
+
+</body>
+</html>
