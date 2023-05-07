@@ -82,3 +82,56 @@ function addLab() {
   
   console.log(labs);
 }
+
+
+function adCrs() {
+  var tbl = document.getElementById("addCourse");
+  var courseName = document.getElementById("adCourse").value;
+  var row = tbl.insertRow();
+  var cell = row.insertCell();
+  cell.innerHTML = courseName;
+  document.getElementById("adCourse").value = "";
+   
+  var adCOURSES = JSON.parse(sessionStorage.getItem("adCOURSES")) || []; // get existing courses or create a new array
+  adCOURSES.push(courseName); // add the new course name to the array
+  sessionStorage.setItem("adCOURSES", JSON.stringify(adCOURSES)); // save the updated courses array back to session storage
+   
+  console.log(adCOURSES);
+
+}
+
+
+function populateLectures() {
+  // Get the courses array from local storage
+  var courses = JSON.parse(localStorage.getItem("courses")) || [];
+
+  // Get the labs array from session storage
+  var labs = JSON.parse(sessionStorage.getItem("labs")) || [];
+
+  // Get the adCOURSES array from session storage
+  var adCOURSES = JSON.parse(sessionStorage.getItem("adCOURSES")) || [];
+
+  // Get all the cells with class "Lecture"
+  var lectureCells = document.getElementsByClassName("lecture");
+
+  // Loop through each Lecture cell and set its value to a random course
+  for (var i = 0; i < lectureCells.length; i++) {
+    var randomCourse = courses[Math.floor(Math.random() * courses.length)];
+    lectureCells[i].innerHTML = randomCourse;
+  }
+
+  // Set the inner HTML of the L-Output cell to a random lab
+  var lOutputCells = document.getElementsByClassName("L-Output");
+  for (var i = 0; i < lOutputCells.length; i++) {
+    var randomLab = labs[Math.floor(Math.random() * labs.length)];
+    lOutputCells[i].innerHTML = randomLab;
+  }
+
+  // Set the inner HTML of the Output cell to a random ad course
+  var outputCells = document.getElementsByClassName("Output");
+  for (var i = 0; i < outputCells.length; i++) {
+    var randomAdCourse = adCOURSES[Math.floor(Math.random() * adCOURSES.length)];
+    outputCells[i].innerHTML = randomAdCourse;
+  }
+}
+

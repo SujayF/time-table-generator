@@ -11,7 +11,7 @@ table, th, td {
     padding: 10px;
   }
 
-  #courseName,#labInput{
+  #courseName,#labInput, #adCourse{
     background-color: #2C3439;
     color:  #F2ECD7;
     height: 25px;
@@ -24,7 +24,7 @@ table, th, td {
 
   
 
-  .btn, .delete-button,.labBtn {
+  .btn, .delete-button,.labBtn, .addadCourse {
     background-color: #3b622f;
     height: 25px;
     border-radius: 6px;

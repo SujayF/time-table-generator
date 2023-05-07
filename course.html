@@ -14,7 +14,7 @@
 
     <form onsubmit="myFunction();return false; "  >
 
-        <input type="text" id="courseName" placeholder="Enter CourseName"  required > <br>
+        <input type="text" id="courseName" placeholder="Enter CourseName"  required > 
         <!-- <input type="text" id="facultyName" placeholder="Enter Faculty Name" pattern="[A-Z]{3}" > <br> -->
         <input type="submit" class="btn" value="Add Course & Faculty " required > 
         <input type="reset" class="btn" value="Clear ">
@@ -24,9 +24,17 @@
 
 
     <form onsubmit="addLab(); return false;" >
-      <input type="text" id="labInput" placeholder="Enter LAB Name" required > <br>
+      <input type="text" id="labInput" placeholder="Enter LAB Name" required > 
       <input type="submit" class="labBtn" value="ADD LAB "  required > </input>
    </form>
+
+   <form onsubmit="adCrs(); return false;">
+      <input type="text" id="adCourse" placeholder="Enter Additional Course" required > 
+      <input type="submit" class="addadCourse" value="ADD Additional Course "  required > </input>
+
+   </form>
+
+
 
     <div class="tables"> 
 
@@ -36,7 +44,6 @@
             <!-- <td class="Faculty" >Faculty</td> -->
         </tr>
     </table>
-     
     <table id="labTable">
       <thead>
         <tr>
@@ -49,12 +56,18 @@
         </tr>
       </tbody>
     </table>
-    
+    <table id="addCourse" >
+      <tr>
+         <td>
+            Additional Course
+         </td>
+      </tr>
+    </table>
 
 
    </div>
 
-    <table> 
+    <table id="mainTable" > 
 
         <tr>
    
@@ -73,8 +86,8 @@
         <tr>
    
            <td> MONDAY </td>
-           <td class="Output" >   </td>
-           <td class="Output" >  </td>
+           <td class="lecture" >   </td>
+           <td class="lecture" >   </td>
            <td class="Interval" rowspan="5" >Interval</td>
            <td class="L-Output" >  </td>
            <td class="Interval" rowspan="5" >Interval</td>
@@ -86,8 +99,8 @@
         <tr>
    
            <td> TUESDAY </td>
-           <td class="Output" ></td>
-           <td class="Output" ></td>
+           <td class="lecture" >   </td>
+           <td class="lecture" >   </td>
            
            <td class="L-Output" >  </td>
 
@@ -101,8 +114,8 @@
         <tr>
    
            <td> WEDNESDAY </td>
-           <td class="Output" ></td>
-           <td class="Output" ></td>
+           <td class="lecture" >   </td>
+           <td class="lecture" >   </td>
            <td class="L-Output" >  </td>
            <td class="Output" ></td>
            
@@ -114,8 +127,8 @@
         <tr>
    
            <td> THURSDAY </td>
-           <td class="Output" ></td>
-           <td class="Output" ></td>
+           <td class="lecture" >   </td>
+           <td class="lecture" >   </td>
 
            <td class="L-Output" >  </td>
            
@@ -129,8 +142,8 @@
         <tr>
    
            <td> FRIDAY</td>
-           <td class="Output" ></td>
-           <td class="Output" ></td>
+           <td class="lecture" >   </td>
+           <td class="lecture" >   </td>
            
            <td class="L-Output" >  </td>
            <td class="Output" ></td>
@@ -144,7 +157,13 @@
    
        </table>
    
-       <div > <button class="button-3" role="button">Generate</button> </div>
+       <!-- <div > <button class="button-3" role="button">Generate</button>  -->
+          
+         <button class="button-3" role="button" onclick="populateLectures()">Generate</button>
+
+      
+      </div>
+
 
 
 
