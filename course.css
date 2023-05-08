@@ -1,19 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
-    background-color: #DBD6CB;
+    background-color: #F0F5F9;
+    font-family: 'Roboto', sans-serif;
 
 }
 
 
-table, th, td {
+table, td {
+    border: 1px solid rgb(54, 42, 42);
+    border-collapse: collapse;
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  th{
+    background-color:#52616B;
     border: 1px solid rgb(54, 42, 42);
     border-collapse: collapse;
     margin: 5px;
     padding: 10px;
   }
 
+
   #courseName,#labInput, #adCourse{
-    background-color: #2C3439;
-    color:  #F2ECD7;
+    background-color: #C9D6DF;
+    color:  #1E2022;
     height: 25px;
     border-radius: 5px;
     padding-left: 4px;
@@ -25,19 +37,20 @@ table, th, td {
   
 
   .btn, .delete-button,.labBtn, .addadCourse {
-    background-color: #3b622f;
-    height: 25px;
+    background-color: #1E2022;
+    color: #fff;
+    height: 40px;
     border-radius: 6px;
-    padding-left: 4px;
+    padding: 10px;
     margin-bottom: 15px;
-    box-shadow: 2px 2px #E46A39;
+    /* box-shadow: 4px 4px #52616B; */
     
   }
 
   
 .button-3 {
     appearance: none;
-    background-color:#E46A39;
+    background-color:#1E2022;
     border: 1px solid rgba(27, 31, 35, .15);
     border-radius: 6px;
     box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
