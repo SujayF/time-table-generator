@@ -18,7 +18,6 @@ function myFunction() {
   }
 
   localStorage.setItem("courses", JSON.stringify(courses));
-  console.log(courses);
 }
 
 
@@ -34,8 +33,6 @@ function deleteRow() {
     courses.pop();
     localStorage.setItem("courses", JSON.stringify(courses));
   }
-
-   console.log(courses)
 }
 
 function addLab() {
@@ -66,7 +63,6 @@ function addLab() {
   // Save the updated labs array back to session storage
   sessionStorage.setItem("labs", JSON.stringify(labs));
   
-  console.log(labs);
 }
 
 
@@ -81,8 +77,6 @@ function adCrs() {
   var adCOURSES = JSON.parse(sessionStorage.getItem("adCOURSES")) || []; // get existing courses or create a new array
   adCOURSES.push(courseName); // add the new course name to the array
   sessionStorage.setItem("adCOURSES", JSON.stringify(adCOURSES)); // save the updated courses array back to session storage
-   
-  console.log(adCOURSES);
 
 }
 
