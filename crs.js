@@ -1,17 +1,3 @@
-/*function myFunction(){
-    var tbl = document.getElementById("myTable");
-    var row = tbl.insertRow();
-    var cell1= row.insertCell();
-    var cell2= row.insertCell();
-    cell1.innerHTML = document.getElementById("courseName").value;
-    cell2.innerHTML = document.getElementById("facultyName").value;
- 
-    In the second implementation of myFunction(), the cells are created without IDs. This means that you cannot access them easily by ID later, but you can still manipulate their content or style using other methods, such as traversing the table structure or using the querySelector() method.
-
-   In summary, adding IDs to elements can be useful for later manipulation, but it is not strictly necessary for basic table insertion.
- 
-
-}*/
 
 
 var courses = [];

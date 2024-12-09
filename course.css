@@ -9,6 +9,7 @@
 
 table, td {
     border: 1px solid rgb(54, 42, 42);
+    border-radius: 5px;
     border-collapse: collapse;
     margin: 5px;
     padding: 10px;
@@ -99,6 +100,12 @@ table, td {
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
   }
 
+  .tables {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:  700px;
+  }
 
 
   
